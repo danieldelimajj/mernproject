@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="shadow-md">
+    <header className="shadow-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
         <div className="flex items-center">
           <img
@@ -13,7 +13,7 @@ const Header = () => {
           <p className="text-primary-400 text-2xl font-bold">ashbnb</p>
         </div>
 
-        <div className="flex items-center rounded-full border border-gray-300 py-2 pr-4 pl-6 shadow-md">
+        <div className="hidden lg:flex items-center rounded-full border border-gray-300 py-2 pr-4 pl-6 shadow-md">
           <p className="border-r border-r-gray-300 pr-4">Qualquer lugar</p>
           <p className="border-r border-r-gray-300 px-4">Qualquer semana</p>
           <p className="px-4">Hóspedes</p>
@@ -61,10 +61,10 @@ const Header = () => {
               clipRule="evenodd"
             />
           </svg>
-          <p>Daniel Lima</p>
+          <p className="max-w-20 truncate">Daniel Lima</p>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
